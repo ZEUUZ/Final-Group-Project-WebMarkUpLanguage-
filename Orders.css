@@ -1,0 +1,19 @@
+@font-face { 
+    font-family: Orbitron-Black;
+    src: url(Fonts/Orbitron/Orbitron-Black.ttf);
+}
+ /* Font for nav bar */
+
+
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+/*  genral styles  */
+
+body{
+    background-color: black ;
+}
+
+/* temporary styles */
