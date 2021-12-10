@@ -10,10 +10,20 @@
     margin: 0%;
     padding: 0%;
 }
-/*  genral styles  */
+/*  general styles  */
 
-body{
+body {
     background-color: black ;
+    color: white;
 }
+h1 {
+    font-family: Orbitron-Black;
+}
+h1, p { 
+    text-align: center;
+}
+table {
+    visibility: hidden;
+ }
 
 /* temporary styles */
