@@ -3,7 +3,13 @@
     src: url(Fonts/Orbitron/Orbitron-Black.ttf);
 }
  /* Font for nav bar */
-
+ @font-face {
+    font-family: 'Almarai';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/almarai/v5/tsstApxBaigK_hnnQ1iFow.woff2) format('woff2');
+}
+/* font i used for body -l*/
 
 *{
     box-sizing: border-box;
