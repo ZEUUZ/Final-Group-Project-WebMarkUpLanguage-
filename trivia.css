@@ -26,4 +26,8 @@ table {
     visibility: hidden;
  }
 
+#stop { 
+    visibility: hidden;
+}
+
 /* temporary styles */

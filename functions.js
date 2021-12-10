@@ -6,6 +6,7 @@ function resetTrivia() {
  
  function showTrivia() {
     document.getElementById('triviatable').style.visibility='visible';
+    document.getElementById('stop').style.visibility='visible';
     document.trivia.start.disabled = true;
     document.trivia.stop.disabled = false;
  }
