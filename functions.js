@@ -3,10 +3,14 @@ function resetTrivia() {
     for (i=0; i<document.trivia.elements.length; i++) document.trivia.elements[i].disabled=false;
     document.trivia.stop.disabled = true;
  }
+ function hideButton() {
+   document.getElementById('start').style.visibility='hidden';
+ }
  
  function showTrivia() {
     document.getElementById('triviatable').style.visibility='visible';
     document.getElementById('stop').style.visibility='visible';
+    document.getElementById('clock').style.visibility='visible';
     document.trivia.start.disabled = true;
     document.trivia.stop.disabled = false;
  }
