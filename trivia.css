@@ -1,0 +1,152 @@
+<<<<<<< HEAD
+=======
+/* Font for nav bar */
+>>>>>>> parent of acb6820 (updated)
+@font-face { 
+    font-family: Orbitron-Black;
+    src: url(Fonts/Orbitron/Orbitron-Black.ttf);
+}
+<<<<<<< HEAD
+ /* Font for nav bar */
+
+
+=======
+
+/*  general styles  */
+>>>>>>> parent of acb6820 (updated)
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+<<<<<<< HEAD
+/*  genral styles  */
+
+body{
+    background-color: black ;
+}
+
+/* temporary styles */
+=======
+body {
+    background-color: black ;
+    color: white;
+}
+h1 {
+    font-family: Orbitron-Black;
+    font-size: 75px;
+    padding-bottom: 0.5em;
+}
+h1, p { 
+    text-align: center;
+}
+@font-face {
+    font-family: 'Almarai';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/almarai/v5/tsstApxBaigK_hnnQ1iFow.woff2) format('woff2');
+}
+p, form {
+    font-family: Almarai;
+    padding: 0.1em;
+}
+p { 
+    padding-top: 0.7em;
+    font-size: 25px;
+}
+hr { 
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    height:2px;
+    border-width:0;
+    color:red;
+    background-color:red
+}
+/* temporary styles */
+table {
+    visibility: hidden;
+ }
+
+#stop { 
+    visibility: hidden;
+}
+
+#clock { 
+    visibility: hidden;
+}
+
+/* quiz styles */
+#clock {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: black;
+    width: 75%;
+    margin: auto;
+}
+#triviaclock {
+   display: block;
+   width: 2.5em;
+   height: 2.5em;
+   line-height: 10%;
+   font-size: 2.2em;
+   font-weight: bold;
+   font-family: Almarai;
+   color: red;
+   text-align: center;
+   margin: 10px auto;
+   background-color: black;
+   border: none;
+}
+td, th {
+    vertical-align: top;
+    font-size: 0.9em;
+    padding: 5px;
+ }
+#start {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 0.5em;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 25px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition-duration: 0.9s;
+}
+#start:hover { 
+    background-color: white;
+    border: none;
+    color: red;
+    text-decoration: none;
+    text-align: center;
+}
+table { 
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#stop {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 0.5em;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition-duration: 0.9s;
+}
+#stop:hover { 
+    background-color: white;
+    border: none;
+    color: red;
+    text-decoration: none;
+    text-align: center;
+}
+>>>>>>> parent of acb6820 (updated)

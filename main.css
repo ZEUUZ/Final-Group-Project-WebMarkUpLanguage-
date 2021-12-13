@@ -1,0 +1,74 @@
+@font-face { 
+    font-family: Orbitron-Black;
+    src: url(Fonts/Orbitron/Orbitron-Black.ttf);
+}
+ /* Font for nav bar */
+<<<<<<< HEAD
+
+=======
+ @font-face {
+    font-family: 'Almarai';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/almarai/v5/tsstApxBaigK_hnnQ1iFow.woff2) format('woff2');
+}
+/* font i used for body -l*/
+>>>>>>> parent of acb6820 (updated)
+
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+/*  genral styles  */
+
+
+
+li,a{
+    font-family: Orbitron-Black;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(253, 245, 245);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo{
+    cursor: pointer;
+    width: 200px;
+}
+
+.nav-links{
+    list-style: none;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover{
+    color: rgb(255, 0, 0);
+}
+/* styles for navbar */
+
+#videoBG{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+/* styles used to make video full screen on home page */
+
