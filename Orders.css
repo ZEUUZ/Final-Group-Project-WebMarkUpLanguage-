@@ -35,7 +35,7 @@ body {
 
 .shopping-cart {
     width: 750px;
-    height: 423px;
+    min-height: 423px;
     margin: 80px auto;
     background: #FFFFFF;
     box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
@@ -43,6 +43,7 @@ body {
    
     display: flex;
     flex-direction: column;
+    margin-bottom: 4rem;
 }
 
   .title {
@@ -56,7 +57,7 @@ body {
    
   .item {
     padding: 20px 30px;
-    height: 120px;
+    min-height: 120px;
     display: flex;
   }
    
@@ -79,6 +80,9 @@ body {
     display: block;
     margin: 0 auto;
     width: 25%;
+    padding: 0.8rem;
+    object-fit: scale-down;
+    height: 145px;
     
   }
    
@@ -141,12 +145,20 @@ body {
   }
 
   .total-price {
-    width: 83px;
+    width: 200px;
     padding-top: 27px;
     text-align: center;
     font-size: 16px;
     color: #43484D;
     font-weight: 300;
+    display: grid;
+    
+    grid-template-rows:  repeat(4,25px);
+  }
+
+  .pricing-row {
+    display: grid;
+    grid-template-columns: 100px 100px;
   }
 
   @media (max-width: 800px) {
@@ -154,6 +166,7 @@ body {
       width: 100%;
       height: auto;
       overflow: hidden;
+      
     }
     .item {
       height: auto;
