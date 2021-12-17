@@ -10,6 +10,7 @@
     <title>Marvel Fans</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="merchandise.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
 </head>
 <body>
     
@@ -24,9 +25,121 @@
                 </ul>
             </nav>
         </header>
-       
+        <div class="shopping-cart">
+            <!-- Title -->
+            <div class="title">
+              Super Gear
+            </div>
+      
+            <!-- Product #1 -->
+            <div class="item">
+                <img src="Images/hammer.jpeg" id="image">
+              <div class="description">
+                
+                <span>Thors Hammer</span>
+                <span>Mjolnir</span>
+                <span>Stainless Steel</span>
+              </div>
+              <div class="quantity">
+                <button class="plus-btn" type="button" name="button">
+                  <img src="Images/plus.svg" alt="" />
+                </button>
+                <input type="text" name="name" value="1">
+                <button class="minus-btn" type="button" name="button">
+                  <img src="Images/minus.svg" alt="" />
+                </button>
+              </div>
+              <div class="total-price">$3,049</div>
+            </div>
+      
+            <!-- Product #2 -->
+            <div class="item">
+                <img src="Images/Hulk.jpeg" id="image">
+              <div class="description">
+                
+                <span>Hulk Smash Hands</span>
+                <span>Lightweight</span>
+                <span>Impact Bracers Included</span>
+              </div>
+      
+              <div class="quantity">
+                <button class="plus-btn" type="button" name="button">
+                  <img src="Images/plus.svg" alt="" />
+                </button>
+                <input type="text" name="name" value="1">
+                <button class="minus-btn" type="button" name="button">
+                  <img src="Images/minus.svg" alt="" />
+                </button>
+              </div>
+      
+              <div class="total-price">$1,070</div>
+            </div>
+      
+            <!-- Product #3 -->
+            <div class="item">
+              
+      
+    
+                
+              
+                <img src="Images/MarvelSuit.png" alt="Iron Man Suit" id="image"/>
+              <div class="description">
+                
+                <span>Iron Man Suit</span>
+                <span>Standard Model</span>
+                <span>Thrusters Not Included</span>
+              </div>
+      
+              <div class="quantity">
+                <button class="plus-btn" type="button" name="button">
+                  <img src="Images/plus.svg" alt="" />
+                </button>
+                <input type="text" name="name" value="1">
+                <button class="minus-btn" type="button" name="button">
+                  <img src="Images/minus.svg" alt="" />
+                </button>
+              </div>
+      
+              <div class="total-price">$9,049</div>
+            </div>
+          </div>
+      
+          <script type="text/javascript">
+            $('.minus-btn').on('click', function(e) {
+                  e.preventDefault();
+                  var $this = $(this);
+                  var $input = $this.closest('div').find('input');
+                  var value = parseInt($input.val());
+      
+                  if (value > 1) {
+                      value = value - 1;
+                  } else {
+                      value = 0;
+                  }
+      
+              $input.val(value);
+      
+              });
+      
+              $('.plus-btn').on('click', function(e) {
+                  e.preventDefault();
+                  var $this = $(this);
+                  var $input = $this.closest('div').find('input');
+                  var value = parseInt($input.val());
+      
+                  if (value < 100) {
+                    value = value + 1;
+                  } else {
+                      value =100;
+                  }
+      
+                  $input.val(value);
+              });
+      
+            $('.like-btn').on('click', function() {
+              $(this).toggleClass('is-active');
+            });
+          </script>
 
 </body>
 </html>
-
-

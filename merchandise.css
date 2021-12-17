@@ -18,8 +18,186 @@
 }
 /*  genral styles  */
 
-body{
-    background-color: black ;
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);
+
+* {
+  box-sizing: border-box;
 }
 
-/* temporary styles */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  margin: 0;
+  background-color: #333;
+  font-family: 'Roboto', sans-serif;
+}
+
+.shopping-cart {
+  width: 80%;
+  height: 424px;
+  margin: 5% auto;
+  background: #999;
+  box-shadow: 3px 3px 10px 10px rgba(0,120,9,.8);
+  border-radius: 6px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  height: 60px;
+  border-bottom: 1px solid rgba(0,120,9,.4);
+  padding: 2% 2%;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.item {
+  padding-top: 1%;
+  /* padding-right: 1%; */
+  padding-bottom: 1%;
+  height: 120px;
+  display: flex;
+}
+
+.item:nth-child(3) {
+  border-top:  1px solid rgba(0,120,9,.4);
+  border-bottom:  1px solid rgba(0,120,9,.4);
+}
+
+/* Buttons -  Delete and Like */
+.buttons {
+  position: relative;
+  padding-top: 1%;
+  margin-right: 60px;
+}
+
+
+
+
+.is-active {
+  animation-name: animate;
+  animation-duration: .8s;
+  animation-iteration-count: 1;
+  animation-timing-function: steps(28);
+  animation-fill-mode: forwards;
+}
+
+@keyframes animate {
+  0%   { background-position: left;  }
+  50%  { background-position: right; }
+  100% { background-position: right; }
+}
+
+/* Product Image */
+#image {
+    
+    display: block;
+  margin-right: 8%;
+  height: 100px;
+  width: 30%;
+  background-color: white;
+  margin-left: 2%;
+  
+}
+
+/* Product Description */
+.description {
+  padding-top: 10px;
+  margin-right: 60px;
+  width: 20%;
+}
+
+.description span {
+  display: block;
+  font-size: 14px;
+  color: rgba(255,255,255,.9);
+  font-weight: 400;
+}
+
+.description span:first-child {
+  margin-bottom: 5px;
+  color: rgba(255,255,200,.9);
+}
+.description span:last-child {
+  font-weight: 300;
+  margin-top: 8px;
+  color: rgba(255,255,9,.6);
+}
+
+/* Product Quantity */
+.quantity {
+  padding-top: 2.5%;
+  margin-right: 10%;
+}
+.quantity input {
+  -webkit-appearance: none;
+  border: none;
+  text-align: center;
+  width: 32px;
+  font-size: 16px;
+  color: rgba(0,120,9,.4);
+  font-weight: 300;
+}
+
+button[class*=btn] {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+.minus-btn img {
+  margin-bottom: 2px;
+}
+.plus-btn img {
+  margin-top: 2px;
+}
+button:focus,
+input:focus {
+  outline:0;
+}
+
+/* Total Price */
+.total-price {
+  width: 10%;
+  padding-top: 3%;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  font-weight: 300;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .shopping-cart {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  .item {
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .image img {
+    width: 50%;
+  }
+  .image,
+  .quantity,
+  .description {
+    width: 100%;
+    text-align: center;
+    margin: 6px 0;
+  }
+  .buttons {
+    margin-right: 20px;
+  }
+}
+
