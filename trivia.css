@@ -36,6 +36,7 @@ p, form {
 }
 p { 
     padding-top: 0.7em;
+    padding-bottom: 0.7em;
     font-size: 25px;
 }
 hr { 
@@ -62,11 +63,11 @@ table {
 
 /* quiz styles */
 #clock {
-    position: -webkit-sticky; /* Safari */
+    position: -webkit-sticky; /* safari */
     position: sticky;
     top: 0;
     background-color: black;
-    width: 75%;
+    width: 100%;
     margin: auto;
 }
 #triviaclock {
