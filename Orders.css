@@ -34,11 +34,11 @@ body {
 
 
 .shopping-cart {
-    width: 750px;
-    min-height: 423px;
+    width: 80%;
+    
     margin: 80px auto;
     background: #FFFFFF;
-    box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+    box-shadow: 5px 5px 10px 10px rgba(255,0,0,0.9);
     border-radius: 6px;
    
     display: flex;
@@ -187,3 +187,52 @@ body {
       margin-right: 20px;
     }
   }
+
+  @media only screen and (max-width: 600px) {
+    .nav-links li a:hover {
+      color: chartreuse;
+    }
+  
+    li,a{
+      font-family: Orbitron-Black;
+      font-weight: 500;
+      font-size: 16px;
+      text-decoration: none;
+      color: rgb(253, 245, 245);
+  }
+  
+  header{
+      display: block;
+      padding: 30px 10%;
+  }
+  
+  .logo{
+      cursor: pointer;
+      width: 100%;
+  }
+  
+  .nav-links{
+      list-style: none;
+  }
+  
+  .nav-links li{
+      display: block;
+      width: 100%;
+      margin: auto;
+      text-align: center;
+      padding-top: 3%;
+  }
+  
+  .nav-links li a {
+      transition: all 0.3s ease 0s;
+  }
+  
+  .nav-links li a:hover{
+      color: rgb(0, 255, 0);
+      background-color: rgba(255, 255, 255, 0.4);
+  }
+  
+  
+  }
+
+  
