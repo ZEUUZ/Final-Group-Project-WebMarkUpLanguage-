@@ -1,3 +1,4 @@
+//lily made this page
 function resetTrivia() {
     document.trivia.triviaclock.value = 0;
     for (i=0; i<document.trivia.elements.length; i++) document.trivia.elements[i].disabled=false;
