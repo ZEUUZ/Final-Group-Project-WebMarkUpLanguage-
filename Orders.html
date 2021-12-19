@@ -28,7 +28,7 @@
                 </ul>
             </nav>
         </header>
-        <div class="shopping-cart">
+        <form class="shopping-cart" id='shopping-cart' name='shopping-cart' method='get' action='credit.html'>
             <!-- Title -->
             <div class="title">
               Super-Shopping Cart
@@ -192,7 +192,8 @@
                 </div>
               </div>
             </div>
-          </div>
+            <input type='submit' id='checkout' name='checkout' value='Checkout' />
+          </form>
           <script>
           $('.minus-btn').on('click', function(e) {
         e.preventDefault();
