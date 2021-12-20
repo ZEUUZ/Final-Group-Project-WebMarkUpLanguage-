@@ -1,0 +1,51 @@
+/* Main Styles */
+@font-face { 
+    font-family: Orbitron-Black;
+    src: url(Fonts/Orbitron/Orbitron-Black.ttf);
+}
+
+*{
+    font-size: 20px;
+    font-family: Orbitron-Black;
+}
+
+/* Background  styles */
+
+body{
+    background-color: black;
+    color: white;
+}
+
+/* Date styles */
+
+.date{
+    display: grid;
+    grid-template-columns: 100px 200px;
+    position: relative;
+    left: 1600px;
+    top: 20px;
+}
+
+
+
+/* Adress styles */
+.dt{
+    position: relative;
+    left: 48%;
+}
+.dt-2{
+  top: 1em;
+}
+
+
+
+
+/* Payment styles */
+
+
+
+
+
+
+
+
